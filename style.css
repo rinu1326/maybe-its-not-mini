@@ -469,6 +469,31 @@ input::-webkit-input-placeholder {
     width: .8rem;
     height: 1rem;
   }
+  /* new sub media */
+  /* CSS for larger screens */
+.news-letter {
+  /* Your styles for larger screens go here */
+}
+
+/* CSS for screens with a max-width of 600px */
+@media only screen and (max-width: 600px) {
+  .news-letter {
+    /* Your styles for smaller screens go here */
+  }
+  .des {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    text-align: center; /* Center the text */
+  }
+  form {
+    display: flex; /* Make the form a flex container */
+    flex-direction: column; /* Stack the input and button vertically */
+    align-items: center; /* Center the input and button horizontally */
+  }
+  input, button {
+    width: 60%; /* Make the input and button take up 90% of the width of the form */
+  }
+}
+
 
   /* page header */
 /* 
