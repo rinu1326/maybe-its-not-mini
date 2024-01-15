@@ -100,8 +100,8 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
-  top: .2rem;
-  right:.3rem;
+  top: .1rem;
+  right:.4rem;
 
 }
 .nav-icon i:hover{
