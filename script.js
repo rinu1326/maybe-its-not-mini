@@ -41,17 +41,17 @@ menu.onclick = () =>{
 
 
 
-let count =0;
+let count =4;
 const counter = document.getElementById(counter);
 document.getElementById('add anim').addEventListener('click', event =>{
   const cl = counter.classList;
   const c ='anime';
   count++;
-  counter.innerText = count;
+  counter.innerText = count++;
   cl.remove(c, cl.contains(c));
   setTimeout(() =>
     counter.classList.add('anime')
-    ,1)
+    ,4)
 
 
 })
