@@ -8,6 +8,17 @@
     font-family: 'Jost', sans-serif;
     list-style: none;
 }
+:root{
+  --background-color:#fff
+  --text-color:#555
+  --title-color:#000
+}
+
+body{
+  background: var(--background-color);
+  color: var(--text-color);
+  transition: background 0.8s, color 0.8s;
+}
 header{
   position: fixed;
   width: 100%;
@@ -50,6 +61,28 @@ header{
   font-size: 25px;
   font-weight: 400;
   transition: all .42s ease;
+}
+
+
+.toggle-btn{
+  background:black ;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.toggle-btn img{
+  width: 25px;
+  margin-left:10px ;
+}
+
+.dark-theame{
+  background: #000;
+  color: #999;
 }
 /* add cart animation */
 

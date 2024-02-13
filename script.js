@@ -41,17 +41,32 @@ menu.onclick = () =>{
 
 
 
-let count =4;
-const counter = document.getElementById(counter);
-document.getElementById('add anim').addEventListener('click', event =>{
-  const cl = counter.classList;
-  const c ='anime';
-  count++;
-  counter.innerText = count++;
-  cl.remove(c, cl.contains(c));
-  setTimeout(() =>
-    counter.classList.add('anime')
-    ,4)
+// let count =4;
+// const counter = document.getElementById(counter);
+// document.getElementById('add anim').addEventListener('click', event =>{
+//   const cl = counter.classList;
+//   const c ='anime';
+//   count++;
+//   counter.innerText = count++;
+//   cl.remove(c, cl.contains(c));
+//   setTimeout(() =>
+//     counter.classList.add('anime')
+//     ,4)
 
 
-})
+// })
+
+let btn = document.getElementById('btn');
+let btnspan=document.getElementById("btn-span")
+let btnimage=document.getElementById("btn-img")
+btn.onclick=function(){
+  document.body.classList.toggle('dark-theame')
+
+  if(document.body.classList.contains('dark-theame')){
+    btnspan.innerHTML="dark"
+    btnimage.src="./images/moon.png"
+  }else{
+    btnspan.innerHTML="light"
+    btnimage.src="./images/sun.png"
+  }
+}
